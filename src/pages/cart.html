@@ -1,0 +1,352 @@
+//= ../templates/header.html
+
+<div class="cart">
+    <div class="wrap">
+        <ul class="nav-strip">
+            <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Главная</a></li>
+            <li class="nav-strip__item">/</li>
+            <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Корзина</a></li>
+        </ul>
+
+        <div class="section-top">
+            <div class="section-title-3">Корзина</div>
+
+            <a href="#!" class="btn-3">Вернуться к покупкам</a> 
+        </div>
+    </div>
+</div>
+
+<div class="cart-box">
+    <div class="wrap">
+        //= ../templates/cart/card-product.html
+
+        //= ../templates/cart/card-product.html
+
+        //= ../templates/cart/card-product.html
+    </div>
+</div>
+
+<div class="cart-final-amount">
+    <div class="wrap">
+        <div class="cart-final-amount__content">
+            <div class="cart-final-amount-box">
+                <span class="cart-final-amount-box__text">Итого<span>4</span>товара:</span>
+                <span class="cart-final-amount-box__price"><span>21 868</span> руб.</span>
+            </div>
+    
+            <button class="btn-base">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+<div class="cart-product-min">
+    <div class="wrap">
+        <div class="cart-product-min__content">
+            <div class="section-top">
+                <div class="section-title-2">Состав заказа</div>
+                <button class="btn-3">Изменить</button>
+            </div>
+    
+            //= ../templates/cart/card-product-min.html
+
+            //= ../templates/cart/card-product-min.html
+
+            //= ../templates/cart/card-product-min.html
+
+            <div class="cart-final-amount-box">
+                <span class="cart-final-amount-box__text">Итого<span>4</span>товара:</span>
+                <span class="cart-final-amount-box__price"><span>21 868</span> руб.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cart-contact-info">
+    <div class="wrap">
+        <div class="cart-contact-info__content">
+            <div class="section-top">
+                <div class="section-title-2">1. Контактная информация</div>
+            </div>
+            <form action="" class="cart-form">
+                <div class="cart-form__box">
+                    <label for="cart_form_name" class="cart-form__title">ФИО</label>
+                    <input type="text" id="cart_form_name" required placeholder="Иванов Иван Иванович" class="cart-form__item">
+                </div>
+                <div class="cart-form__box">
+                    <label for="cart_form_phone" class="cart-form__title">Телефон</label>
+                    <input type="tel" id="cart_form_phone" required placeholder="+7 (_ _ _) _ _ - _ _ - _ _" class="cart-form__item">
+                </div>
+                <div class="cart-form__box">
+                    <label for="cart_form_email" class="cart-form__title">E-mail</label>
+                    <input type="email" id="cart_form_email" required placeholder="ivanov@mail.ru" class="cart-form__item">
+                </div>
+
+                <button type="submit" class="btn-2">Далее</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="cart-addressee">
+    <div class="wrap">
+        <div class="cart-addressee__content">
+            <div class="section-top">
+                <div class="section-title-2">Получатель</div>
+                <button class="btn-3">Изменить</button>
+            </div>
+
+            <div class="cart-addressee__box">
+                <span class="cart-addressee__text">ФИО:</span>
+                <span class="cart-addressee__item cart-addressee__name">Иванов Иван Иванович</span>
+            </div>
+
+            <div class="cart-addressee__box">
+                <span class="cart-addressee__text">Телефон:</span>
+                <span class="cart-addressee__item cart-addressee__tel">+7 (999) 12-34-567</span>
+            </div>
+
+            <div class="cart-addressee__box">
+                <span class="cart-addressee__text">E-mail:</span>
+                <span class="cart-addressee__item cart-addressee__email">ivanov@mail.ru</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="method-receipt">
+    <div class="wrap">
+        <div class="method-receipt__content">
+            <div class="section-top">
+                <div class="section-title-2">2. Способ получения заказа</div>
+            </div>
+            <div class="choice-method-receipt">
+                <label class="choice-method-receipt__item choice-method-receipt__item_active">
+                    <div class="choice-method-receipt__box">
+                        <input class="choice-method-receipt__radio" checked value="pickup" name="choice-method-receipt" type="radio">
+                    </div>
+                    <div class="choice-method-receipt__text-box">
+                        <div class="choice-method-receipt__text"><b>Самовывоз</b>, бесплатно</div>
+                        <div class="choice-method-receipt__date">Сегодня</div>
+                    </div>
+                </label>
+
+                <label class="choice-method-receipt__item">
+                    <div class="choice-method-receipt__box">
+                        <input class="choice-method-receipt__radio" value="delivery" name="choice-method-receipt" type="radio">
+                    </div>
+                    <div class="choice-method-receipt__text-box">
+                        <div class="choice-method-receipt__text"><b>Доставка</b>, по всей России</div>
+                        <div class="choice-method-receipt__date">От 7 дней</div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="method-receipt-container">
+                <div class="method-receipt-container__item method-receipt-container__item_active method-pickup">
+                    <div class="method-pickup__wrap">
+                        <div class="method-pickup-box">
+                            <div class="method-pickup-box__text">Заказ хранится в пункте самовывоза N дней</div>
+                            <div class="method-pickup-box__text">Адрес пункта самовывоза: Краснодар, ул. Зиповская, д. 5, литер Х</div>
+                            <div class="method-pickup-box__text">Часы работы: Пн-пт 9:00 - 18:00, Сб 10:00 - 15:00, Вс - выходной</div>
+                            <form action="" class="method-pickup-form">
+                                <label for="pickup-textarea" class="method-pickup-form__text">Комментарий к заказу (не обязательно):</label>
+                                <textarea name="" id="pickup-textarea" class="method-pickup-form__textarea"></textarea>
+                                <button class="btn-2">Далее</button>
+                            </form>
+                        </div>
+                        <div class="method-pickup-map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc6b7c182bde37e34ce76e9938dc87735031d96a360a7a3364d7cd1fd7a573c1&amp;source=constructor" width="100%" height="649" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="method-receipt-container__item method-delivery">
+                    <div class="method-delivery__wrap">
+                        <div class="transport-company">
+                            <div class="transport-company__title">Транспортная компания:</div>
+                            <div class="transport-company__box">
+                                <label class="transport-company__item">
+                                    <input type="radio" name="transport-company" value="bajkal-servis" class="transport-company__radio">
+                                    <img src="../img/delivery/delivery-item_1.png" alt="Байкал Сервис" class="transport-company__img">
+                                </label>
+
+                                <label class="transport-company__item transport-company__item_active">
+                                    <input type="radio" name="transport-company" value="pek" checked class="transport-company__radio">
+                                    <img src="../img/delivery/delivery-item_2.png" alt="ПЭК" class="transport-company__img">
+                                </label>
+
+                                <label class="transport-company__item">
+                                    <input type="radio" name="transport-company" value="delovye-Linii" class="transport-company__radio">
+                                    <img src="../img/delivery/delivery-item_3.png" alt="Деловые Линии" class="transport-company__img">
+                                </label>
+
+                                <label class="transport-company__item">
+                                    <input type="radio" name="transport-company" value="zh.d.e" class="transport-company__radio">
+                                    <img src="../img/delivery/delivery-item_4.png" alt="Ж.Д.Э" class="transport-company__img">
+                                </label>
+
+                                <label class="transport-company__item">
+                                    <input type="radio" name="transport-company" value="pochta-rossii" class="transport-company__radio">
+                                    <img src="../img/delivery/delivery-item_5.png" alt="Почта России" class="transport-company__img">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="method-delivery-box">
+                            <div class="method-delivery-box__title">Адрес</div>
+                            <form action="" class="method-delivery-form">
+                                <div class="method-delivery-form__container">
+                                    <label class="method-delivery-form__box method-delivery-form__box_locality">
+                                        <div for="" class="method-delivery-form__title">Населенный пункт*</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+    
+                                    <label class="method-delivery-form__box method-delivery-form__box_street">
+                                        <div class="method-delivery-form__title">Улица*</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+    
+                                    <label class="method-delivery-form__box">
+                                        <div class="method-delivery-form__title">Дом*</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+    
+                                    <label class="method-delivery-form__box">
+                                        <div class="method-delivery-form__title">Стр./корп.</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+    
+                                    <label class="method-delivery-form__box">
+                                        <div class="method-delivery-form__title">Подъезд</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+    
+                                    <label class="method-delivery-form__box">
+                                        <div class="method-delivery-form__title">Подъезд</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+    
+                                    <label class="method-delivery-form__box">
+                                        <div class="method-delivery-form__title">Квартира</div>
+                                        <input type="text" required class="method-delivery-form__input">
+                                    </label>
+                                </div>
+
+                                <div class="method-delivery-form-container">
+                                    <div class="method-delivery-form-container__text">Комментарий к заказу (не обязательно):</div>
+                                    <textarea name="" id="" class="method-delivery-form-container__textarea"></textarea>
+                                    <div class="method-delivery-form-container__item">
+                                        <div class="method-delivery-form-container__box">
+                                            <span class="method-delivery-form-container__text">Предварительная стоимость доставки:</span>
+                                            <span class="method-delivery-form-container__price">5 000 р.</span>
+                                        </div>
+                                        <div class="method-delivery-form-container__text-2">Наш менеджер позвонит вам для подтверждения заказа и назовет<br> точную стоимость доставки. Она может немного отличаться от<br> рассчитанной выше.</div>
+                                    </div>
+                                </div>
+
+                                <div class="method-delivery-amount">
+                                    <div class="method-delivery-amount__text">Итого:</div>
+                                    <div class="method-delivery-amount__price">26 868 руб.</div>
+                                </div>
+
+
+                                <div class="method-delivery__btn-box">
+                                    <button type="submit" class="btn-2">Далее</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="method-receipt-min">
+    <div class="wrap">
+        <div class="method-receipt-min__content">
+            <div class="section-top">
+                <div class="section-title-2">Способ получения заказа</div>
+                <button class="btn-3">Изменить</button>
+            </div>
+
+            <div class="method-receipt-min__box">
+                <span class="method-receipt-min__item"><b>Доставка:</b></span>
+                <span class="method-receipt-min__item">ПЭК,</span>
+                <span class="method-receipt-min__item">Волгоград,</span>
+                <span class="method-receipt-min__item">ул. Первая,</span>
+                <span class="method-receipt-min__item">д.1,</span>
+                <span class="method-receipt-min__item">стр. 1,</span>
+                <span class="method-receipt-min__item">подъезд 1,</span>
+                <span class="method-receipt-min__item">кв. 1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cart-payment-method">
+    <div class="wrap">
+        <div class="cart-payment-method__content">
+            <div class="section-top">
+                <div class="section-title-2">3. Способ оплаты</div>
+            </div>
+            <label class="cart-payment-method-box">
+                <div class="cart-payment-method-box__container">
+                    <div class="cart-payment-method-box__radio-box cart-payment-method-box__radio-box_active">
+                        <input type="radio" name="cart-payment-method" id="" checked class="cart-payment-method-box__radio">
+                    </div>
+                    <div class="cart-payment-method__item">
+                        <span class="cart-payment-method-box__title">Наличными или картой в шоуруме</span>
+                        <div class="payment">
+                           <div class="payment__icon-box">
+                               <svg class="payment__icon"><use xlink:href="#icon-visa"></use></svg>
+                               <svg class="payment__icon"><use xlink:href="#icon-master-card"></use></svg>
+                               <svg class="payment__icon"><use xlink:href="#icon-maestro"></use></svg>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </label>
+
+            <label class="cart-payment-method-box">
+                <div class="cart-payment-method-box__container">
+                    <div class="cart-payment-method-box__radio-box">
+                        <input type="radio" name="cart-payment-method" id="" class="cart-payment-method-box__radio">
+                    </div>
+                    <div class="cart-payment-method__item">
+                        <span class="cart-payment-method-box__title">Картой онлайн</span>
+                        <div class="payment">
+                            <div class="payment__icon-box">
+                                <svg class="payment__icon"><use xlink:href="#icon-visa"></use></svg>
+                                <svg class="payment__icon"><use xlink:href="#icon-master-card"></use></svg>
+                                <svg class="payment__icon"><use xlink:href="#icon-maestro"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-payment-method-box__text">После подтверждения заказа наш менеджер отправит вам на почту ссылку для оплаты онлайн</div>
+            </label>
+
+            <label class="cart-payment-method-box">
+                <div class="cart-payment-method-box__container">
+                    <div class="cart-payment-method-box__radio-box">
+                        <input type="radio" name="cart-payment-method" id="" class="cart-payment-method-box__radio">
+                    </div>
+                    <div class="cart-payment-method__item">
+                        <span class="cart-payment-method-box__title">На расчетный счет (для юридических лиц)</span>
+                    </div>
+                </div>
+                
+                <div class="cart-payment-method-box__text">После подтверждения заказа наш менеджер отправит вам на почту реквизиты для оплаты</div>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="cart-btn-place">
+    <div class="wrap">
+        <button class="btn-base">Оформить заказ</button>
+    </div>
+</div>
+
+//= ../templates/footer.html

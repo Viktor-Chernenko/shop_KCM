@@ -1,0 +1,265 @@
+//= ../templates/header.html
+
+<div class="user">
+    <div class="wrap">
+        <div class="user-box">
+            <div class="user-box__avatar">
+                <img src="../img/other/avatar.jpg" alt="Аватар">
+            </div>
+
+            <div class="user-box__container">
+
+                <div class="user-box__login">ivanovivan@mail.ru</div>
+
+                <div class="user-box__item">
+                    <button class="user-box__change-data btn-3">Изменить данные</button>
+                    <button class="user-box__btn">Выйти</button>
+                </div>
+            </div>
+
+            <div class="user-nav-mobile">
+                <button class="user-nav-btn" id="user-nav-btn-mobile">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="user-nav-mobile__container">
+                    <div class="user-nav">
+                        <ul class="user-nav__list">
+                            <li class="user-nav__item user-nav__item_active">Каталог для дилеров</li>
+                            <li class="user-nav__item">Новости для дилеров</li>
+                            <li class="user-nav__item">Акции</li>
+                            <li class="user-nav__item">Прайс-листы</li>
+                            <li class="user-nav__item">Сертификаты</li>
+                            <li class="user-nav__item">Клиентская политика</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="user-content">
+            <div class="user-nav">
+                <ul class="user-nav__list">
+                    <li class="user-nav__item user-nav__item_active">Каталог для дилеров</li>
+                    <li class="user-nav__item">Новости для дилеров</li>
+                    <li class="user-nav__item">Акции</li>
+                    <li class="user-nav__item">Прайс-листы</li>
+                    <li class="user-nav__item">Сертификаты</li>
+                    <li class="user-nav__item">Клиентская политика</li>
+                </ul>
+            </div>
+    
+            <div class="user-container">
+                <div class="user-container__item user-container__item_active user-catalog">
+                    <div class="user-catalog__top">
+                        <div class="select">
+                            <div class="ui-dropdown">
+                                <div class="ui-dropdown__current">Кабинеты руководителей</div>
+                                <div class="ui-dropdown__items">
+                                    <div class="ui-dropdown__item">Кабинеты руководителей</div>
+                                    <div class="ui-dropdown__item">Кабинеты руководителей</div>
+                                    <div class="ui-dropdown__item">Кабинеты руководителей</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs-container">
+                            <div class="ui-tabs">
+                                <label class="ui-tabs__label">
+                                    <input class="ui-tabs__input" type="radio" name="pa-catalog" checked>
+                                    <div class="ui-tabs__title">Все</div>
+                                </label>
+                    
+                                <label class="ui-tabs__label">
+                                    <input class="ui-tabs__input" type="radio" name="pa-catalog">
+                                    <div class="ui-tabs__title">Добавленные</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-list-product">
+
+                        <div class="user-list-product__item user-all-product">
+                            <div class="user-list-product__top">
+                                <div class="search-box">
+                                    <input class="search-box__item" placeholder="Артикул или название" type="search" name="" id="">
+                                    <svg class="search-box__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.176" cy="6.176" r="5.176" stroke="#242424" stroke-width="2"/><path d="M10.147 10.147L15 15" stroke="#242424" stroke-width="2"/></svg>
+                                </div>
+        
+                                <button class="btn-base">Оформить заказ</button>
+                            </div>
+
+                            <ul class="user-list-product__title-list">
+                                <li class="user-list-product__title">Товар</li>
+                                <li class="user-list-product__title">Артикул</li>
+                                <li class="user-list-product__title">Количество</li>
+                                <li class="user-list-product__title">Цена</li>
+                            </ul>
+
+                            <div class="user-list-product__content">
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+                                
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+                            </div>
+                        </div>
+
+                        <div class="user-list-product__item user-added-product">
+                            <div class="user-list-product__top">
+                                <div class="search-box">
+                                    <input class="search-box__item" placeholder="Артикул или название" type="search" name="" id="">
+                                    <svg class="search-box__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.176" cy="6.176" r="5.176" stroke="#242424" stroke-width="2"/><path d="M10.147 10.147L15 15" stroke="#242424" stroke-width="2"/></svg>
+                                </div>
+        
+                                <button class="btn-base">Оформить заказ</button>
+                            </div>
+
+                            <ul class="user-list-product__title-list">
+                                <li class="user-list-product__title">Товар</li>
+                                <li class="user-list-product__title">Артикул</li>
+                                <li class="user-list-product__title">Количество</li>
+                                <li class="user-list-product__title">Цена</li>
+                            </ul>
+
+                            <div class="user-list-product__content">
+                                //= ../templates/user/user-catalog-item.html
+
+                                //= ../templates/user/user-catalog-item.html
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="user-container__item">Новости для дилеров</div>
+                <div class="user-container__item">Акции</div>
+                <div class="user-container__item">Прайс-листы</div>
+                <div class="user-container__item">Сертификаты</div>
+                <div class="user-container__item">Клиентская политика</div>
+
+                <div class="make-deal">
+                    <div class="section-title-2">Мой заказ</div>
+
+                    <ul class="make-deal__title-list">
+                        <li class="make-deal__title">Товар</li>
+                        <li class="make-deal__title">Артикул</li>
+                        <li class="make-deal__title">Количество</li>
+                        <li class="make-deal__title">Стоимость</li>
+                    </ul>
+
+                    <div class="make-deal__product-list">
+                        <div class="make-deal__container">
+                            //= ../templates/user/user-catalog-item-min.html
+
+                            //= ../templates/user/user-catalog-item-min.html
+    
+                            //= ../templates/user/user-catalog-item-min.html
+    
+                            //= ../templates/user/user-catalog-item-min.html
+    
+                            //= ../templates/user/user-catalog-item-min.html
+    
+                            //= ../templates/user/user-catalog-item-min.html
+    
+                            //= ../templates/user/user-catalog-item-min.html
+    
+                            //= ../templates/user/user-catalog-item-min.html
+                        </div>
+
+                        <div class="make-deal__btn-box">
+                            <div class="btn-base">Подтвердить заказ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="make-deal-complete">
+                    <div class="section-title-2">Заказ сформирован</div>
+
+                    <div class="make-deal-complete__text">Наш менеджер позвонит вам в ближайшее время, чтобы уточнить детали.</div>
+                </div>
+                
+                <div class="user-settings">
+                    <div class="section-title-2">Настройки личного кабинета</div>
+
+                    <div class="user-settings-box">
+                        <form action="" class="user-settings-form">
+                            <label class="user-settings-form__item">
+                                <label for="" class="user-settings-form__title">Фамилия</label>
+                                <input type="text" class="user-settings-form__input" placeholder='Иванов'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Имя</span>
+                                <input type="text" class="user-settings-form__input" placeholder='Иван'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Отчество</span>
+                                <input type="text" class="user-settings-form__input" placeholder='Иванович'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Название компании</span>
+                                <input type="text" class="user-settings-form__input" placeholder='Контекс-мебель'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Телефон</span>
+                                <input type="tel" class="user-settings-form__input" placeholder='8 (912) 34-56-789'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">E-mail</span>
+                                <input type="email" class="user-settings-form__input" placeholder='ivanovivan@mai.ru'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Логин</span>
+                                <input type="text" class="user-settings-form__input" placeholder='ivanovivan@mai.ru'>
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Новый пароль</span>
+                                <input type="password" class="user-settings-form__input">
+                            </label>
+
+                            <label class="user-settings-form__item">
+                                <span for="" class="user-settings-form__title">Подтвердить новый пароль</span>
+                                <input type="password" class="user-settings-form__input">
+                            </label>
+
+                            <button class="btn-2">Сохранить</button>
+                        </form>
+
+                        <div class="user-settings-img-box">
+                            <div class="user-settings-img-box__item">
+                                <img src="../img/other/user-settings-avatar.jpg" alt="Логотип компании" class="user-settings-img-box__img">
+                            </div>
+
+                            <button class="user-settings-img-box__btn">Выбрать файл</button>
+                            <span class="user-settings-img-box__text">Файл не выбран</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= ../templates/footer.html

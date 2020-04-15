@@ -1,0 +1,154 @@
+//= ../templates/header.html
+
+    <div class="services-page">
+        <div class="wrap">
+            <ul class="nav-strip">
+                <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Главная</a></li>
+                <li class="nav-strip__item">/</li>
+                <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Сервис</a></li>
+            </ul>
+            <h3 class="section-title">Сервис</h3>
+           
+            <div class="ui-tabs">
+                <label class="ui-tabs__label">
+                    <input class="ui-tabs__input" type="radio" name="tab" checked>
+                    <div class="ui-tabs__title">Выезд замерщика</div>
+                </label>
+    
+                <label class="ui-tabs__label">
+                    <input class="ui-tabs__input" type="radio" name="tab">
+                    <div class="ui-tabs__title">Консультация дизайнера</div>
+                </label>
+    
+                <label class="ui-tabs__label">
+                    <input class="ui-tabs__input" type="radio" name="tab">
+                    <div class="ui-tabs__title">2D план расстановки мебели с размерами</div>
+                </label>
+    
+                <label class="ui-tabs__label">
+                    <input class="ui-tabs__input" type="radio" name="tab">
+                    <div class="ui-tabs__title">3D визуализация с расстановкой мебели</div>
+                </label>
+            </div>
+        
+            <div class="services-page-content">
+                <div class="services-page-content__item services-page-content__item_active">
+                    <div class="services-page-content__item-wrap">
+                        <img src="../img/services/page-services-item_1.jpg" alt="Выезд замерщика" class="services-page-content__img">
+                        <div class="services-page-content__box">
+                            <div class="services-page-content__title">Выезд замерщика - бесплатно</div>
+
+                            <div class="services-page-content__description">Наш специалист приедет и снимет необходимые замеры. Вы получите точные размеры помещения и сможете подобрать мебель по параметрам. Услуга действует в Краснодаре и Краснодарском крае.</div>
+                            
+                            <form action="" class="services-page-form" name="form" required>
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_name_1" class="services-page-form__label">Имя*</label>
+                                    <input type="text" class="services-page-form__name" id="form_gager_name_1" name="name" required placeholder="Иван">
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_phone_1" class="services-page-form__label">Телефон*</label>
+                                    <input type="tel" class="services-page-form__phone" id="form_gager_phone_1" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" type="tel" name="tel" required>
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_address_1" class="services-page-form__label">Адрес*</label>
+                                    <input type="text" class="services-page-form__address" id="form_gager_address_1" name="address" required>
+                                </div>
+                                <button type="submit" class="services-page-form__btn">Вызвать замерщика</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-page-content__item">
+                    <div class="services-page-content__item-wrap">
+                        <img src="../img/services/page-services-item_2.jpg" alt="Выезд замерщика" class="services-page-content__img">
+                        <div class="services-page-content__box">
+                            <div class="services-page-content__title">Консультация дизайнера - бесплатно</div>
+
+                            <div class="services-page-content__description">Кратко опишите, для какого помещения выбираете мебель, каким видите интерьер. Дизайнер порекомендует цвета, материалы и варианты отделки помещения. Консультации проводим как в нашем офисе, так и по скайпу.</div>
+                            
+                            <form action="" class="services-page-form" name="form" required>
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_name_2" class="services-page-form__label">Имя*</label>
+                                    <input type="text" class="services-page-form__name" id="form_gager_name_2" name="name" required placeholder="Иван">
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_phone_2" class="services-page-form__label">Телефон*</label>
+                                    <input type="tel" class="services-page-form__phone" id="form_gager_phone_2" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" type="tel" name="tel" required>
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_description-wishes_2_3" class="services-page-form__label">Кратко опишите ваши пожелания:</label>
+                                    <textarea class="services-page-form__wish" required name="description-wishes_2" id="form_description-wishes_2"></textarea>
+                                </div>
+                                <button type="submit" class="services-page-form__btn">Заказать консультацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-page-content__item">
+                    <div class="services-page-content__item-wrap">
+                        <img src="../img/services/page-services-item_3.jpg" alt="Выезд замерщика" class="services-page-content__img">
+                        <div class="services-page-content__box">
+                            <div class="services-page-content__title">Создание 2D плана расстановки мебели с размерами - бесплатно</div>
+
+                            <div class="services-page-content__description">Отправьте нам план или планировку помещения. Мы создадим черно-белый 2D план расстановки мебели со всеми размерами.</div>
+                            
+                            <form action="" class="services-page-form" name="form" required>
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_name_3" class="services-page-form__label">Имя*</label>
+                                    <input type="text" class="services-page-form__name" id="form_gager_name_3" name="name" required placeholder="Иван">
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_phone_3" class="services-page-form__label">Телефон*</label>
+                                    <input type="tel" class="services-page-form__phone" id="form_gager_phone_3" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" type="tel" name="tel" required>
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_description-wishes_3" class="services-page-form__label">Кратко опишите ваши пожелания:</label>
+                                    <textarea class="services-page-form__wish" required name="description-wishes_3" id="form_description-wishes_3"></textarea>
+                                </div>
+                                <button type="submit" class="services-page-form__btn">Заказать консультацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-page-content__item">
+                    <div class="services-page-content__item-wrap">
+                        <img src="../img/services/page-services-item_4.jpg" alt="Выезд замерщика" class="services-page-content__img">
+                        <div class="services-page-content__box">
+                            <div class="services-page-content__title">Создание 3D визуализации с расстановкой мебели и основных предметов интерьера</div>
+
+                            <div class="services-page-content__description">Приезжайте к нам офис, расскажите свои пожелания, мы подберем материалы, цвета и создадим 3D эскиз помещения без подробной прорисовки деталей. Оплата за услугу фиксированная, зависит от типа помещения.</div>
+                            
+                            <form action="" class="services-page-form" name="form" required>
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_name_4" class="services-page-form__label">Имя*</label>
+                                    <input type="text" class="services-page-form__name" id="form_gager_name_4" name="name" required placeholder="Иван">
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_gager_phone_4" class="services-page-form__label">Телефон*</label>
+                                    <input type="tel" class="services-page-form__phone" id="form_gager_phone_4" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" type="tel" name="tel" required>
+                                </div>
+
+                                <div class="services-page-form__box">
+                                    <label for="form_description-wishes_4" class="services-page-form__label">Кратко опишите ваши пожелания:</label>
+                                    <textarea class="services-page-form__wish" required name="description-wishes_4" id="form_description-wishes_4"></textarea>
+                                </div>
+                                <button type="submit" class="services-page-form__btn">Заказать консультацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    //= ../templates/footer.html

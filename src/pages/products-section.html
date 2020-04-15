@@ -1,0 +1,175 @@
+//= ../templates/header.html
+
+<div class="products-section">
+    <div class="wrap">
+        <ul class="nav-strip">
+            <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Главная</a></li>
+            <li class="nav-strip__item">/</li>
+            <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Каталог</a></li>
+            <li class="nav-strip__item">/</li>
+            <li class="nav-strip__item"><a href="#!" class="nav-strip__link">Кресла</a></li>
+        </ul>
+
+        <h3 class="section-title-3">Кресла</h3>
+
+        <div class="ui-tabs">
+            <label class="ui-tabs__label">
+                <input class="ui-tabs__input" type="radio" name="tab" checked>
+                <div class="ui-tabs__title">Для руководителя</div>
+            </label>
+
+            <label class="ui-tabs__label">
+                <input class="ui-tabs__input" type="radio" name="tab">
+                <div class="ui-tabs__title">Для персонала</div>
+            </label>
+
+            <label class="ui-tabs__label">
+                <input class="ui-tabs__input" type="radio" name="tab">
+                <div class="ui-tabs__title">Для посетителей</div>
+            </label>
+
+            <label class="ui-tabs__label">
+                <input class="ui-tabs__input" type="radio" name="tab">
+                <div class="ui-tabs__title">Стулья</div>
+            </label>
+
+            <label class="ui-tabs__label">
+                <input class="ui-tabs__input" type="radio" name="tab">
+                <div class="ui-tabs__title">Геймерские</div>
+            </label>
+
+            <label class="ui-tabs__label">
+                <input class="ui-tabs__input" type="radio" name="tab">
+                <div class="ui-tabs__title">Мягкие</div>
+            </label>
+        </div>
+
+        <div class="filter-product">
+            <div class="select select__manufacturer">
+                <div class="select__title">Производитель:</div>
+
+                <div class="ui-dropdown">
+                    <div class="ui-dropdown__current">Все производители</div>
+                    <div class="ui-dropdown__items">
+                        <div class="ui-dropdown__item">Все производители</div>
+                        <div class="ui-dropdown__item">Все производители</div>
+                        <div class="ui-dropdown__item">Все производители</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-input">
+                <div class="text-input__title">Цена, р.:</div>
+                <div class="text-input__box">
+                    <input type="text" class="text-input__item" placeholder="1000">
+                    <span></span>
+                    <input type="text" class="text-input__item" placeholder="50000">
+                </div>
+            </div>     
+            
+            <div class="ui-checkbox-container">
+                <label class="ui-checkbox">
+                    <div class="ui-checkbox__box">
+                        <input type="checkbox" class="ui-checkbox__item" checked>
+                    </div>
+
+                    <div class="ui-checkbox__title">С нагрузкой более 100 кг</div>
+                </label>
+
+                <label class="ui-checkbox">
+                    <div class="ui-checkbox__box">
+                        <input type="checkbox" class="ui-checkbox__item">
+                    </div>
+
+                    <div class="ui-checkbox__title">Со спинкой</div>
+                </label>
+            </div>
+
+            <button class="btn-2">Показать</button>
+        </div>
+    </div>
+</div>
+
+<div class="result">
+    <div class="wrap">
+        <div class="result-top">
+            <!-- === pagination === -->
+
+            //= ../templates/ui/pagination.html
+
+            <!-- === / pagination === -->
+            <div class="result-top__box">
+                <div class="sort-elements"><span class="sort-elements__text">Сортировать по:</span>
+                    <div class="sort-elements__box">
+                        <div class="ui-dropdown  ui-dropdown_small">
+                            <div class="ui-dropdown__current"><div class="ui-dropdown__current-decorated">↑ <span>Популярности</span></div></div>
+                            <div class="ui-dropdown__items">
+                                <div class="ui-dropdown__item">↑ <span>Популярности</span></div>
+                                <div class="ui-dropdown__item">↑ <span>Цене</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="number-elements">
+                    <span class="number-elements__text">Показывать по:</span>
+
+                    <div class="number-elements__box">
+                        <div class="ui-dropdown  ui-dropdown_small">
+                            <div class="ui-dropdown__current"><div class="ui-dropdown__current-decorated">24</div></div>
+                            <div class="ui-dropdown__items">
+                                <div class="ui-dropdown__item">24</div>
+                                <div class="ui-dropdown__item">48</div>
+                                <div class="ui-dropdown__item">72</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-list">
+            <div class="result-list-content">
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+                
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+                
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+
+                //= ../templates/product-card/base/product-card-3.html
+            </div>
+        </div>
+
+         <!-- === pagination === -->
+
+         //= ../templates/ui/pagination-bottom.html
+
+         <!-- === / pagination === -->
+    </div>
+</div>
+
+//= ../templates/footer.html
