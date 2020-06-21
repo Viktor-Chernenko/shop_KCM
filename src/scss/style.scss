@@ -71,6 +71,10 @@
     box-sizing: border-box;
 }
 
+address {
+    font-style: normal;
+}
+
 body {
     font-family: $font-basis;
     font-size: $fz-basis;
@@ -346,6 +350,7 @@ body {
     }
 
     &__link {
+        position: relative;
         padding: 0 3px;
         font-size: $fz-nav;
         font-weight: 600;
@@ -353,10 +358,39 @@ body {
         color: $color-basis;
         text-decoration: none;
 
+        &::before {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            content: '';
+            background: $color-basis;
+            transition: .5s;
+        }
+
+        &:hover {
+            &::before {
+                left: 0;
+                width: 100%;
+            }
+        }
+
         &_login {
             padding: 4px 8px;
             margin-left: 8px;
+            color: $color-basis;
             background: rgba(36, 36, 36, 0.1);
+            transition: .3s;
+
+            &:hover {
+                color: $color-additional-4;
+                background: rgba(36, 36, 36, 0.5);
+            }
+
+            &::before {
+                display: none;
+            }
         }
     }
 }
@@ -420,6 +454,8 @@ body {
             margin: 0 0 13px 0;
         }
 
+        // fill="#360F76"
+
         &__link {
             padding: 5px 0;
             font-size: $fz-text-4;
@@ -427,6 +463,10 @@ body {
             line-height: 19px;
             color: $color-basis;
             text-decoration: none;
+
+            &:hover {
+                font-weight: 600;
+            }
         }
     }
 
@@ -471,6 +511,14 @@ body {
             &-icon {
                 width: 40px;
                 height: 40px;
+                background: $color-additional-2;
+                border-radius: 100%;
+                box-shadow: 0 0 10px 3px transparent;
+                transition: .3s;
+
+                &:hover {
+                    box-shadow: 0 0 10px 3px $color-additional-2;
+                }
             }
         }
 
@@ -579,6 +627,10 @@ body {
 
         &__text {
             padding-top: 43px;
+
+            .btn-base {
+                display: none;
+            }
         }
 
         &__title {

@@ -746,6 +746,28 @@
     }
 }
 
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background: $color-additional-2;
+    border-radius: 100%;
+
+    &__icon {
+        width: 15px;
+        height: 12px;
+        fill: #fff;
+        transform: rotate(-90deg);
+    }
+}
+
 // === / Общие классы ===
 
 // === Общее для секций продуктов ===
@@ -941,7 +963,8 @@
 
         img {
             display: block;
-            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 
